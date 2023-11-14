@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
-public class KafkaConfigTopic {
+public class KafkaTopicConfig {
     @Bean
-    public NewTopic myTopic(){
-        return TopicBuilder.name("danilsTopic")
-                .build();
+    public NewTopic newTopic(){
+        return TopicBuilder.name("danilsTopic").build();
     }
+
 }
